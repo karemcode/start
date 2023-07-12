@@ -13,3 +13,26 @@ html,body{
     
 }
 
+a{
+    color: #0f0d0d;
+    text-decoration: none;
+}
+
+h1, h2, h3{
+    padding-bottom: 20px;
+}
+
+p{
+    margin: 10px 0;
+}
+
+.clr{
+    clear: both;
+}
+
+/* Padding */
+.py-1{ padding: 10px 0;}
+.py-2{ padding: 20px 0;}
+.py-3{ padding: 30px 0;}
+
+
