@@ -192,3 +192,23 @@ color: antiquewhite;
 }
 
 
+/* Features */
+
+.box{
+    float: left;
+    width: 33.3%;
+    padding: 50px;
+    text-align: center;
+}
+
+.box i{
+    margin-bottom: 10px;
+    
+}
+
+#main-footer{
+    text-align: center;
+    background: #444;
+    color: #fff;
+    padding: 20px;
+}
