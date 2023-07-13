@@ -269,3 +269,31 @@ color: antiquewhite;
     text-align: center;
     padding-bottom: 40px;
 }
+
+/* Contact Page */
+
+#contact-form .form-group{
+    margin-bottom: 5px;
+}
+
+#contact-form label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid;
+}
+
+#contact-form textarea{
+    height: 200px;
+}
+
+#contact-form input,
+#contact-form textarea:focus{
+    outline: none;
+    border-color: rgb(158, 147, 147)
+}
