@@ -212,3 +212,30 @@ color: antiquewhite;
     color: #fff;
     padding: 20px;
 }
+
+/*About page*/
+
+#about-info .info-right{
+    float: right;
+    width: 50%;
+    min-height: 100%;
+}
+
+#about-info .info-right img{
+    display: block;
+    margin: auto;
+    width: 70%;
+    border-radius: 25%;
+    
+}
+
+#about-info .info-left{
+    float: left;
+    width: 50%;
+    min-height: 100%;
+}
+
+.L-heading{
+    font-size: 40px;
+    line-height: 1.2;
+}
