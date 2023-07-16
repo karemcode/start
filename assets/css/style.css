@@ -154,7 +154,7 @@ color: antiquewhite;
 /* Showcase */
 
 #showcase{
-    background: url('assets/images/showcase.jpg') no-repeat center center/cover;
+    background: url('/assets/images/showcase.jpg') no-repeat center center/cover;
     height: 600px;
 }
 
@@ -267,7 +267,7 @@ color: antiquewhite;
 }
 
 #testimonials .testimonials img{
-    /*width: 100px;*/
+    width: 100px;
     float: left;
     margin-right: 20px;
     border-radius: 50%;
