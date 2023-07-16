@@ -297,3 +297,98 @@ color: antiquewhite;
     outline: none;
     border-color: rgb(158, 147, 147)
 }
+
+
+
+/* media queries */
+@media screen and (max-width: 768px) {
+
+
+    #navbar{
+        padding-bottom: 30px;
+    }
+  #navbar .logo {
+    float: none;
+    text-align: center;
+  }
+
+  #navbar ul,
+  #navbar ul li {
+    float: none;
+  }
+
+  #nav ul li a {
+    padding: 5px;
+    border-bottom: #444 dotted 1px;
+  }
+
+  /* Showcase*/
+
+  #showcase {
+    height: 100%;
+  }
+
+  #showcase .showcase-content {
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
+
+  /* Home Info */
+
+  #home-info .info-img {
+    display: none;
+  }
+
+  #home-info .info-content {
+    float: none;
+    width: 100%;
+  }
+
+  /* Boxes */
+
+  .box {
+    float: none;
+    width: 100%;
+  }
+
+  /* About */
+
+  #about-info .info-right,
+  #about-info .info-left {
+    float: none;
+    width: 100%;
+  }
+
+  #about-info .info-right {
+    margin-top: 30px;
+  }
+
+  .L-heading {
+    text-align: center;
+  }
+
+  /* contact */
+
+  #contact-info .box {
+    border-bottom: #444 dotted 5px;
+  }
+
+  .container {
+    overflow: unset;
+  }
+  #testimonials .testimonials {
+      height: unset;
+  }
+  #testimonials .testimonials img {
+    width: 100px
+  }
+}
+
+@media screen and (max-width: 400px) {
+    #home-info {
+        height: 100%;
+    }
+    #testimonials {
+        padding: 10px;
+    }
+}
