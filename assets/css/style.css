@@ -16,6 +16,11 @@ html,body{
     
 }
 
+main {
+
+    flex: 1 0 auto;
+}
+
 a{
     color: #0f0d0d;
     text-decoration: none;
