@@ -298,6 +298,12 @@ color: antiquewhite;
     border-color: rgb(158, 147, 147)
 }
 
+#contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+    max-height: 200px;
+}
+
 
 #response-form {
     display: flex;
