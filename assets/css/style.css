@@ -16,6 +16,73 @@ html,body{
     
 }
 
+/*added a link with an icon that sticks to the left side of my site*/
+
+.fixed-link {
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    animation: colorSwitch 5s infinite;
+    font-size: 2rem;
+    
+  }
+  
+  @keyframes colorSwitch {
+   80% {
+      background-color: #0ef922; /* Initial color */
+    }
+    50% {
+      background-color: #fc08a3ac; /* New color */
+    }
+    100% {
+      background-color: #11f0fc; /* Initial color */
+    }
+  }
+  
+
+  .form-table {
+    width: 400px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+  }
+
+  .form-table th,
+  .form-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+
+  .form-table th {
+    background-color: #f2f2f2;
+  }
+
+  .form-table input[type="text"],
+  .form-table textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+  }
+
+  .form-table input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+
+
+
+
+
 main {
 
     flex: 1 0 auto;
@@ -331,6 +398,54 @@ color: antiquewhite;
     padding: 10px;
     margin-top: 25px;
 }
+
+
+<!-----style book.html-->
+
+
+    .form-table {
+      width: 400px;
+      margin: 0 auto;
+      border-collapse: collapse;
+      font-family: Arial, sans-serif;
+    }
+  
+    .form-table th,
+    .form-table td {
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+  
+    .form-table th {
+      background-color: #f2f2f2;
+    }
+  
+    .form-table input[type="text"],
+    .form-table textarea,
+    .form-table select {
+      width: 100%;
+      padding: 5px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: none;
+    }
+  
+    .form-table input[type="submit"] {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  
+    .form-message {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+
 
 
 
