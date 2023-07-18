@@ -123,3 +123,6 @@ This project is a comprehensive design for a hotel that aims to provide guests w
 The live link can be found [here](https://karemcode.github.io/My--hotel/)
 
 
+  -![App Screenshot](https://github.com/karemcode/My_Hotel/blob/main/assets/images/Media%20query.png?raw=true)
+
+
