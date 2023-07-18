@@ -120,7 +120,6 @@ This project is a comprehensive design for a hotel that aims to provide guests w
   - From the source section drop-down menu, select the **Main** Branch, then click "Save".
   - The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-The live link can be found [here](https://karemcode.github.io/start/)
-
+The live link can be found [here](https://karemcode.github.io/My--hotel/)
 
 
