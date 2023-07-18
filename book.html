@@ -72,7 +72,7 @@
     <tr>
       <td colspan="2" class="centered">
 
-        <input type="submit" value="Submit" onclick="handleSubmit()">
+        <input type="submit" value="Submit" onclick="handleSubmit(event)">
       </td>
     </tr>
   </table>
@@ -89,33 +89,34 @@
 
     const form = document.getElementById('form');
     form.addEventListener("submit", handleSubmit);
-    function handleSubmit(e) {
-      // Get form values
-      e.preventDefault();
-      var name = document.getElementById("name").value;
-      var email = document.getElementById("email").value;
-      var phone = document.getElementById("phone").value;
-      var room = document.getElementById("room").value;
-      var message = document.getElementById("message").value;
-  
-      if (name && email && phone && room && message) {
 
-        // Display the thank you message
-        
-        // Clear the form inputs (optional)
-        document.getElementById("name").value = "";
-        document.getElementById("email").value = "";
-        document.getElementById("phone").value = "";
-        document.getElementById("room").value = "";
-        document.getElementById("message").value = "";
-        document.getElementById("thank-you").style.display = "block";
-        setTimeout(() => {
-          document.getElementById("thank-you").style.display = "none";
-        }, 2000)
-      }
-      
-  
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var phone = document.getElementById("phone").value;
+    var room = document.getElementById("room").value;
+    var message = document.getElementById("message").value;
+
+    if (name && email && phone && room && message) {
+      // Display the thank you message
+      document.getElementById("thank-you").style.display = "block";
+
+      // Clear the form inputs (optional)
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("phone").value = "";
+      document.getElementById("room").value = "";
+      document.getElementById("message").value = "";
+
+      setTimeout(() => {
+        document.getElementById("thank-you").style.display = "none";
+      }, 2000);
     }
+  }
+  
+
   </script>
 
   
