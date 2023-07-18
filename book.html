@@ -37,31 +37,7 @@
   </header>
 
 
-
-  
-  
-  <script>
-    function handleSubmit() {
-      // Get form values
-      var name = document.getElementById("name").value;
-      var email = document.getElementById("email").value;
-      var phone = document.getElementById("phone").value;
-      var room = document.getElementById("room").value;
-      var message = document.getElementById("message").value;
-  
-      
-  
-      // Display the thank you message
-      document.getElementById("thank-you").style.display = "block";
-  
-      // Clear the form inputs (optional)
-      document.getElementById("name").value = "";
-      document.getElementById("email").value = "";
-      document.getElementById("phone").value = "";
-      document.getElementById("room").value = "";
-      document.getElementById("message").value = "";
-    }
-  </script>
+  <form id="form" action=javascript:void(0);>
   
   <table class="form-table">
     <tr>
@@ -100,11 +76,47 @@
       </td>
     </tr>
   </table>
-  
+  </form>
   <div id="thank-you" class="form-message" style="display: none;">
     <h2>Thank you for reaching out!</h2>
     <p>We are going to be in touch.</p>
   </div>
+
+
+  
+
+  <script>
+
+    const form = document.getElementById('form');
+    form.addEventListener("submit", handleSubmit);
+    function handleSubmit(e) {
+      // Get form values
+      e.preventDefault();
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var phone = document.getElementById("phone").value;
+      var room = document.getElementById("room").value;
+      var message = document.getElementById("message").value;
+  
+      if (name && email && phone && room && message) {
+
+        // Display the thank you message
+        
+        // Clear the form inputs (optional)
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("phone").value = "";
+        document.getElementById("room").value = "";
+        document.getElementById("message").value = "";
+        document.getElementById("thank-you").style.display = "block";
+        setTimeout(() => {
+          document.getElementById("thank-you").style.display = "none";
+        }, 2000)
+      }
+      
+  
+    }
+  </script>
 
   
 </body>
