@@ -46,7 +46,7 @@ html,body{
     width: 400px;
     margin: 0 auto;
     border-collapse: collapse;
-    font-family: Arial, sans-serif;
+    
   }
 
   .form-table th,
@@ -400,15 +400,16 @@ color: antiquewhite;
 }
 
 
-<!-----style book.html-->
+/*style book.html*/
 
 
-    .form-table {
-      width: 400px;
-      margin: 0 auto;
-      border-collapse: collapse;
-      font-family: Arial, sans-serif;
-    }
+
+.form-table {
+  width: 400px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
   
     .form-table th,
     .form-table td {
